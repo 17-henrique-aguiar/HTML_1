@@ -2,11 +2,12 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Central de Atendimento - Abertura de Chamado0000000</title>
+    <title>Central de Atendimento - Abertura de Chamado</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="logo">Central de Atendimento</div>
+  <div class="container">
+    <div class="logo">Central de Atendimento</div>
     <div class="subtitle">Registre seu chamado e nossa equipe entrará em contato o mais breve possível</div>
 
     <form action="https://henrique17177.app.n8n.cloud/webhook-test/helpdesk-chamado" method="POST">
@@ -16,22 +17,26 @@
         <label>E-mail</label>
         <input type="text" name="email" required>
 
-        <label>Descrição do problema</label>
-        <textarea name="descricao" required></textarea>
+      <label>Assunto</label>
+      <input type="text" name="assunto" required>
 
-        <label>Prioridade</label>
-        <select name="prioridade" required>
-          <option value="">Selecione...</option>
-          <option value="Baixa">Baixa</option>
-          <option value="Média">Média</option>
-          <option value="Alta">Alta</option>
-        </select>
+      <label>Descrição do problema</label>
+      <textarea name="descricao" required></textarea>
 
-        <button type="submit">Enviar Chamado</button>
+      <label>Prioridade</label>
+      <select name="prioridade" required>
+        <option value="">Selecione...</option>
+        <option value="Baixa">Baixa</option>
+        <option value="Média">Média</option>
+        <option value="Alta">Alta</option>
+      </select>
+
+      <button type="submit">Enviar Chamado</button>
     </form>
 
     <div class="footer">
       Central de Atendimento - Todos os direitos reservados
     </div>
+  </div>
 </body>
 </html>
