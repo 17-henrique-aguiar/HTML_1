@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Pedido de Materiais</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="shortcut icon" href="747062.png" type="image/x-icon">
+</head>
+<body>
+  <div class="container">
+    <div class="logo">Pedido de Materiais</div>
+    <div class="subtitle">Faça o pedido dos materiais desejados</div>
+
+    <form action="https://henrique111.app.n8n.cloud/webhook-test/Pedido_materiais" method="POST">
+      <label>Nome</label>
+      <input type="text" name="nome" required>
+
+      <label>E-mail</label>
+      <input type="text" name="email" required>
+
+      <label>Setor</label>
+      <input type="text" name="setor" required>
+
+      <label>Tipo de material</label>
+      <select name="tipo de material" required>
+        <option value="">Selecione...</option>
+        <option value="TI">TI</option>
+        <option value="Limpeza">Limpeza</option>
+        <option value="Construção">Construção</option>
+      </select>
+
+      <label>Descrição do pedido</label>
+      <textarea name="descricão" required></textarea>
+
+      
+      <button type="submit">Enviar Pedido</button>
+    </form>
+
+    <div class="footer">
+      Pedido de Materiais - Todos os direitos reservados
+    </div>
+  </div>
+</body>
+</html>
