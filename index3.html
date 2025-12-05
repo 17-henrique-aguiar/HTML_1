@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário para n8n</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <div class="form-container">
+    <form action="https://henrique111.app.n8n.cloud/webhook-test/finanças" method="POST">
+        
+        <h2>Gastos Mensais</h2>
+
+        <label for="nome">Mês</label>
+        <input type="text" name="nome_saida" placeholder="Digite o mês" required>
+
+        <label for="valor">Valor Gasto</label>
+        <input type="number" name="valor_saida" placeholder="Digite o valor" required>
+
+        <label for="valor">Valor que entrou</label>
+        <input type="number" name="valor_entrada" placeholder="DIgite o valor" required>
+
+        <label for="nome">Status</label>
+        <input type="nome" name="status" placeholder="Digite o status" required>
+
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+</body>
+</html>
