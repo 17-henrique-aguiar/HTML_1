@@ -19,3 +19,4 @@ def page_produto():
         {'id':4, 'nome':'Monitor','cod_barra':'235465564', 'preco':800}
     ]
     return render_template('produtos.html', itens = itens)
+
