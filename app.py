@@ -20,3 +20,4 @@ def page_produto():
     ]
     return render_template('produtos.html', itens = itens)
 
+
