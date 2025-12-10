@@ -33,7 +33,7 @@ def lista():
     quantidade = len(dados)
     return render_template('lista.html', dados=dados, total=total, media=media, quantidade=quantidade)
 
-app.route('/cadastro', methods=['GET', 'POST'])
+@app.route('/cadastro', methods=['GET', 'POST'])
 def cadastro():
     if request.method == 'POST':
         valor = request.form['valor']
