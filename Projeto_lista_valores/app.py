@@ -57,4 +57,5 @@ def grafico():
 
     return render_template('grafico.html')
 
+
 app.run(debug=True)
