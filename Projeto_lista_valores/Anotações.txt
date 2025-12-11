@@ -1,0 +1,2 @@
+Terminal para rodar online:
+Instalar matplotlib.pyplot, FLask, python, criar .venv
